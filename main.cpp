@@ -22,7 +22,7 @@ int main()
 	Vacancy *vac1 = new Vacancy(1001, "Software developer", "Colombo", 100000, "Full time", "22/04/2022");
 	Applications *app1 = new Applications(001, "28/04/2022");
 	Payment *pay1 = new Payment(01, 85200.00, "Online Transfer");
-	Company comp1(1234, "Dialog", "EMP001", "PQRS123", "abc123@gmail.com", "HelloWorld123");
+	Company *comp1= new Company(1234, "Dialog", "EMP001", "PQRS123", "abc123@gmail.com", "HelloWorld123");
 
 	JS1.applyforVacancy(vac1);
 	//JS1.submitApplication();
@@ -67,10 +67,11 @@ int main()
 	Publishing pbl1("01/04/2022");
 	//pbl1.publishVacancy();
 
-	delete emp1;
 	delete vac1;
 	delete app1;
 	delete pay1;
+	delete comp1;
+	//delete emp1;
 	
 	char ch;
 	cin >> ch;
